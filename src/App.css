@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
+*{
+ box-sizing: border-box;
+ padding:0;
+ margin:0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.App{
+  margin: 2px 2px;
+  border: 1px solid #000;
+  padding: 150px  50px 25px 50px;
+  display:flex;
+  justify-content: space-between;
+  height:100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
 }
+.purchaseCard{
+  flex:40%;
+  display:flex;
+justify-content: end;
+}
+.productDetails{
+  flex:60%;
+  display:flex;
+  flex-direction: column;
+  max-width: 950px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.card{
+  width: 600px;
+  height:800px;
+  border: 2px solid #b7b5b5;
+  border-radius: 25px;
+  margin:20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.buttonsProjectNew{
+  
+   height: 40px;
+   border-radius: 15px;
+   background-color: rgb(250, 253, 254);
+   display:flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 1.1rem;
+   padding:0px 10px 0px 5px;
+   margin: 0px 10px 0px 0px;
+   cursor:pointer;
+
+   
+}
+.titleButton{
+  padding: 0px 0px 0px 5px;
+
+}
+.buttonsProjectNew.yellow{
+  color:rgb(230, 209, 24);
+  border: 2px solid rgb(230, 209, 24);
+}
+.buttonsProjectNew.blue{
+  color:rgb(21, 139, 242);
+  border: 2px solid  rgb(21, 139, 242);
+}
+.title{
+  font-size: 1.8rem;
+}
+.secondaryTitle{
+ color:rgba(5, 168, 24, 0.853);
+ font-weight: bold;
+ font-size: 1.6rem;
+ font-style: italic;
+ font-family: 'Poppins', sans-serif;
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputReferences{
+  display:flex;
+  flex-direction: row;
+  flex:1
+}
+.referencesList{
+  flex:4;
+  flex-wrap: wrap;
+}
+.secondaryTitle.titleProductDetails{
+  margin:10px 0px;
+}
+.title.titleProductDetails{
+  margin:10px 0px;
+}
+.titleProductDetails{
+  margin:10px 0px;
+}
+.inputReferences.productDetails{
+  margin:10px 0px;
 }
